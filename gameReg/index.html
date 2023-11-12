@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" action="#" method="POST">
+        <label class="label-form" for="nickname">Имя: </label>
+        <input class="input-form" type="text" name="nickname" id="nickname" required>
+
+        <label class="label-form" for="email">Email: </label>
+        <input class="input-form" type="email" name="email" id="email" required>
+
+        <label class="label-form" for="dateBirthday">День рождения: </label>
+        <input class="input-form" type="date" name="dateBirthday" id="dateBirthday" required>
+
+        <p class="text-form">Пол: </p>
+        <div class="container-flex-form">
+            <div class="flex-form">
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Мужской</label>
+            </div>
+            <div class="flex-form">
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Женский</label>
+            </div>
+        </div>
+
+        <div class="form__item">
+            <label class="text-form" for="country">Страна: </label>
+            <input class="select-form" type="text" name="country" id="country" autocomplete="off" list="countries"
+                required>
+            <datalist id="countries">
+                <option value="Австралия">
+                <option value="Австрия">
+                <option value="США">
+                <option value="Украина">
+                <option value="Польша">
+                <option value="Румыния">
+                <option value="Великобритания">
+                <option value="Франция">
+                <option value="Испания">
+                <option value="Япония">
+                <option value="Турция">
+                <option value="Германия">
+                <option value="Китай">
+                <option value="Корея">
+                <option value="Италия">
+            </datalist>
+        </div>
+
+        <div class="form__item">
+            <label class="text-form" text-formfor="hero-type">Тип героя:</label>
+            <select name="hero-type" id="hero-type" required>
+                <option value="barbarian">Варвар </option>
+                <option value="druid">Друид </option>
+                <option value="pathfinder">Следопыт </option>
+                <option value="magician">Чародей </option>
+            </select>
+        </div>
+
+
+        <label class="label-form" for="experience">Игровой опыт (0-60): </label>
+        <input class="input-form" type="number" name="experience" id="experience" min="0" max="60" required>
+
+        <input class="button-form" type="submit" value="Continue" id="#">
+    </form>
+</body>
+
+</html>

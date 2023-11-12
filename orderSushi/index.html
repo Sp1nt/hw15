@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>hw15.1</title>
+</head>
+
+<body>
+    <form class="form" action="#" method="POST">
+        <label class="label-form" for="name">Имя: </label>
+        <input class="input-form" type="text" name="name" id="name" required>
+
+        <label class="label-form" for="address">Адрес: </label>
+        <input class="input-form" type="text" name="address" id="address" required>
+
+        <label class="label-form" for="number">Телефон: </label>
+        <input class="input-form" type="number" name="number" id="number" required>
+
+        <label class="label-form" for="email">Email: </label>
+        <input class="input-form" type="email" name="email" id="email" required>
+
+        <label class="label-form" for="amount">Количество палочек: </label>
+        <input class="input-form" type="number" name="amount" id="amount" max="10" required>
+
+        <p class="text-form">Вид палочек: </p>
+        <div class="container-flex-form">
+            <div class="flex-form">
+                <input type="radio" name="typeSticks" id="ordinary" checked>
+                <label for="ordinary">Обычные</label>
+            </div>
+            <div class="flex-form">
+                <input type="radio" name="typeSticks" id="educational">
+                <label for="educational">Учебные</label>
+            </div>
+        </div>
+
+
+        <label class="text-form" for="listSushi">Список для выбора суши: </label>
+        <select class="select-form" name="listSushi">
+            <option value='snackRoll'>Ролл-Снэк</option>
+            <option value='thaiRoll'>Ролл-Тай</option>
+            <option value='kadzumiRoll'>Ролл-Кадзуми</option>
+            <option value='AkitaRoll'>Ролл-Акита</option>
+            <option value='aeroRoll'>Ролл-Аеро</option>
+        </select>
+
+        <p class="text-form">Нужно ли класть солфетки?</p>
+        <div class="container-flex-form">
+            <div class="flex-form">
+                <input type="radio" name="napkins" id="true" checked>
+                <label for="true">Да</label>
+            </div>
+            <div class="flex-form">
+                <input type="radio" name="napkins" id="false">
+                <label for="false">Нет</label>
+            </div>
+        </div>
+
+        <label class="comments-label" for="comments">Дополнительный комментарий</label>
+        <textarea class="comments-form" name="comments" cols="30" rows="5"></textarea>
+
+        <input class="button-form" type="submit" value="Continue" id="#">
+    </form>
+</body>
+
+</html>
